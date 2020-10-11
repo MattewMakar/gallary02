@@ -1,7 +1,7 @@
 //===============================================================================
 //If no port defined setting the port to 300
 //===============================================================================
-const HTTP_PORT = process.env.port || 3000;
+const HTTP_PORT = process.env.PORT || 3000;
 
 //===============================================================================
 /*Imprting necessry modules  
@@ -69,7 +69,7 @@ Handlebars.registerHelper("checkImage", () => {
 //===============================================================================
 //GET method with any url will lead to the landing page
 //===============================================================================
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   m_data.focus = "Gallery";
   res.render('index', {data : m_data});
 });
