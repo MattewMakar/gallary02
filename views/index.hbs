@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="loading images from server requests">
+  <link rel="icon" href="./images/gallery.ico">
+  <link rel="stylesheet" href="./style.css">
+  <title>Gallery02</title>
+</head>
+
+<body>
+
+  <form method="post" action="./">
+    <section id="list">
+      <h1>Galary by Mattew Makar</h1>
+      {{#each data.list}}
+      <input type="radio" id="{{this}}" name="imageInput" value="{{this}}">
+      <label for="{{this}}">{{this}}</label><br>
+      {{/each}}
+      <br /><br />
+      <button type="submit" value="submit">Submit</button>
+    </section>
+  </form>
+  <section id="imagContainer">
+    <h6>images</h6>
+    <img src="./images/{{data.focus}}.jpg" alt="{{data.focus}}">
+    <p>{{checkImage}}</p>
+  </section>
+</body>
+
+</html>
