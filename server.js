@@ -69,7 +69,7 @@ Handlebars.registerHelper("checkImage", () => {
 //===============================================================================
 //GET method with any url will lead to the landing page
 //===============================================================================
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   m_data.focus = "Gallery";
   res.render('index', {data : m_data});
 });
