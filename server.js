@@ -57,16 +57,6 @@ let m_data = {
 };
 
 //===============================================================================
-/*Setting up handlebars helper to handle if the request value is null 
-the descreption will be set to empty string */
-//===============================================================================
-Handlebars.registerHelper("checkImage", () => {
-  if (m_data.focus === "No Image")
-    return "";
-  else
-    return m_data.focus;
-});
-//===============================================================================
 //GET method with any url will lead to the landing page
 //===============================================================================
 app.get('*', (req, res) => {
@@ -80,7 +70,7 @@ app.get('*', (req, res) => {
 //===============================================================================
 app.post('/', (req, res) => {
   if (!req.body.imageInput)
-    m_data.focus = "No Image";
+    m_data.focus = "Gallery";
   else
     m_data.focus = req.body.imageInput;
   res.render('index', { data: m_data });
