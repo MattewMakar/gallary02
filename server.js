@@ -122,7 +122,7 @@ app.post('/register', (req, res) => {
     reg.msg = "Please enter username, password and confirm password";
     reg.user = req.body.userName ;
     req.pass = req.body.password;
-  }else if(d[req.body.userName])
+  }else if(d[req.body.userName.toLowerCase()])
   { 
     reg.msg = " Duplicate username "; 
     reg.user = req.body.userName; 
@@ -137,7 +137,7 @@ app.post('/register', (req, res) => {
     reg.msg = " Passwords do not match ";
     reg.user = req.body.userName ;
     reg.pass = req.body.password;
-  }else if (d[req.body.userName] = req.body.password)
+  }else if (d[req.body.userName.toLowerCase()] = req.body.password)
   {
     reg.msg = "User regisesterd successfully ";
     reg.user = "" ;
@@ -166,14 +166,14 @@ app.post('/', (req, res) => {
     let msg = "";
     d = JSON.parse(d);
     
-    if (d[req.body.userName] === req.body.password) {
-     req.logged.user = m_data.user = req.body.userName;
+    if (d[req.body.userName.toLowerCase()] === req.body.password) {
+     req.logged.user = m_data.user = req.body.userName.toLowerCase();
       res.render('index', { data: m_data });
     }
-    else if (!d[req.body.userName]) {
+    else if (!d[req.body.userName.toLowerCase()]) {
       msg = 'Not a registered username';
       res.render('logIn', { message: msg });
-    } else if (d[req.body.userName] != req.body.password) {
+    } else if (d[req.body.userName.toLowerCase()] != req.body.password) {
       msg = 'Invalid password';
       res.render('logIn', { message: msg });
     }

@@ -46,4 +46,8 @@ h2
 a{
   color: rgb(235, 241, 247);;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+    width: 200px;
+
 }

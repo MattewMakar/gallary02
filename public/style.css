@@ -51,19 +51,21 @@ button{
   position: absolute;
   top: 15vh;
   left: 40vw;
-  height: 40vh;
+  height: 50vh;
   width: 400px;
   border-radius: 10px;
   border: 2px solid  rgb(162, 4, 25);
   box-shadow: 3px 3px #b8b7b7;
   background-image: url(./images/loading.gif);
   background-position: center;
+  overflow: hidden;
   
 }
 img{
-  height: 40vh;
+  height: 50vh;
   width: 400px;
   border-radius: 5px;
+  animation: img-load 500ms ease-in;
 }
 
 p{
@@ -80,6 +82,7 @@ p{
 #avatar{
   height: 50px;
   width: 50px;
+  animation: unset;
 
 }
 #username 
@@ -101,4 +104,12 @@ a{
 .user:hover a{
   opacity: 1;
   
+}
+
+@keyframes img-load 
+{
+  0%{transform: translateY(-100%);}
+  80%{transform: translateY(0);}
+  90%{transform: translateY(-5%);}
+  100%{transform: translateY(0);}
 }
