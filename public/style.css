@@ -71,3 +71,34 @@ p{
   color:  rgb(162, 4, 25);
   font-size: 20px;
 }
+.user{
+  position: absolute;
+  text-align: center;
+  top: 3vh ;
+  right : 2vw;
+}
+#avatar{
+  height: 50px;
+  width: 50px;
+
+}
+#username 
+{
+  font-family: unset;
+  transition: opacity .5s;
+  font-size: 15px;
+}
+.user:hover #username{
+  opacity: 0;
+}
+a{
+  opacity: 0;
+  transition: opacity .5s;
+  font-size: 15px;
+  position: relative;
+  top: -35px;
+}
+.user:hover a{
+  opacity: 1;
+  
+}

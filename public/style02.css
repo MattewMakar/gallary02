@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/background1.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+h1{
+  font-family: monospace;
+  font-size: 25px;
+  color:  rgb(162, 4, 25);
+  margin: 30PX 0;
+}
+input{
+  margin: 5px 25px;
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+}
+#errMessage{
+  border-radius: 1px;
+  color: red;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+
+button{
+  margin: 20px;
+  border-radius: 10px;
+  padding: 0;
+  height: 30px;
+  width: 200px;
+  background-color: rgb(162, 4, 25);
+  color: rgb(235, 241, 247);
+  font-size: 20px;
+
+}
+h2
+{
+   margin: 30PX 0;
+  color: cadetblue;
+}
+
+a{
+  color: rgb(235, 241, 247);;
+  text-decoration: none;
+}

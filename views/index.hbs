@@ -12,7 +12,7 @@
 
 <body>
 
-  <form method="post" action="./">
+  <form method="post" action="./gallery">
     <section id="list">
       <h1>CANADIAN CITIES GALLERY</h1>
       {{#each data.list}}
@@ -28,6 +28,14 @@
     <img src="./images/{{data.focus}}.jpg" alt="{{data.focus}}">
     <p>{{data.focus}}</p>
   </section>
+
+      <section class="user">
+        <h6>user</h6>
+        <img id="avatar" src="./images/avatar.ico" alt="USER">
+        <br>
+        <p id="username">{{data.user}}</p>
+        <a href="./">LOG OUT</a>
+      </section>
 </body>
 
 </html>
