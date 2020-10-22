@@ -121,27 +121,37 @@ app.post('/register', (req, res) => {
   {
     reg.msg = "Please enter username, password and confirm password";
     reg.user = req.body.userName ;
-    req.pass = req.body.password;
+    reg.pass = req.body.password;
+    reg.Cpass = req.body.confirmPassword;
+
   }else if(d[req.body.userName.toLowerCase()])
   { 
     reg.msg = " Duplicate username "; 
     reg.user = req.body.userName; 
-    req.pass = req.body.password;
+    reg.pass = req.body.password;
+    reg.Cpass = req.body.confirmPassword;
+
   }else if (req.body.password.length < 8)
   {
     reg.msg = "Passwords must be at lease 8 characters";
     reg.user = req.body.userName;    
-    reg.pass = req.body.password;  
+    reg.pass = req.body.password; 
+    reg.Cpass = req.body.confirmPassword;
+
   }else if (req.body.password != req.body.confirmPassword)
   {
     reg.msg = " Passwords do not match ";
     reg.user = req.body.userName ;
     reg.pass = req.body.password;
+    reg.Cpass = req.body.confirmPassword;
+
   }else if (d[req.body.userName.toLowerCase()] = req.body.password)
   {
     reg.msg = "User regisesterd successfully ";
     reg.user = "" ;
     reg.pass = "";
+    reg.Cpass = "";
+
     fs.writeFile('user.json', JSON.stringify(d, null, 4), err => {
       if (err) throw err;
     });
