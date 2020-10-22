@@ -57,6 +57,8 @@ button{
   border: 2px solid  rgb(162, 4, 25);
   box-shadow: 3px 3px #b8b7b7;
   background-image: url(./images/loading.gif);
+  background-repeat: no-repeat;
+
   background-position: center;
   overflow: hidden;
   
