@@ -80,7 +80,6 @@ p{
   text-align: center;
   top: 3vh ;
   right : 2vw;
-
 }
 #avatar{
   height: 50px;
@@ -90,18 +89,17 @@ p{
 #username 
 {
   font-family: unset;
-  transition: opacity .5s;
-  font-size: 15px;
+  transition: opacity .4s;
 }
 .user:hover #username{
   opacity: 0;
 }
 a{
   opacity: 0;
-  transition: opacity .5s;
+  transition: opacity .4s;
   font-size: 15px;
   position: relative;
-  top: -35px;
+  top: -24px;
 }
 .user:hover a{
   opacity: 1;

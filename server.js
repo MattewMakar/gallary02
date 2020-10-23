@@ -86,6 +86,7 @@ let m_data = {
 //-----------------------------THE WEB APP URL-----------------------------------
 
 app.get('/', (req, res) => {
+   m_data.focus = "Gallery";
   req.logged.user = "";
   req.logged.reset();
   res.render('logIn');
