@@ -56,8 +56,10 @@ button{
   border-radius: 10px;
   border: 2px solid  rgb(162, 4, 25);
   box-shadow: 3px 3px #b8b7b7;
-  overflow: hidden;
   
+}
+#focusImage{
+    overflow: hidden;
 }
 img{
   height: 50vh;
@@ -65,29 +67,33 @@ img{
   border-radius: 5px;
   animation: img-load 500ms ease-in;
 }
-
 p{
+  margin: auto;
+  display: block;
+  justify-content: center;
+  font-size: 20px;
   font-family: monospace;
   color:  rgb(162, 4, 25);
-  font-size: 20px;
 }
 .user{
   position: absolute;
   text-align: center;
   top: 3vh ;
   right : 2vw;
+
 }
 #avatar{
   height: 50px;
   width: 50px;
   animation: unset;
-
 }
 #username 
 {
   font-family: unset;
   transition: opacity .5s;
   font-size: 15px;
+  font-family: monospace;
+  color:  rgb(162, 4, 25);
 }
 .user:hover #username{
   opacity: 0;
