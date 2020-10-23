@@ -11,13 +11,12 @@
 </head>
 
 <body>
-
-  <form method="post" action="/"  autocomplete="off">
-
+  <header>
     <h1>CANADIAN CITIES GALLERY</h1>
-
-    <section >
-      <h2>Login</h2>
+  </header>
+  <section>
+    <form method="post" action="/" autocomplete="off">
+    <h2>Login</h2>
       <br />
       <input id="userName" name="userName" type="text" required placeholder="Username" value="" />
       <br />
@@ -25,15 +24,17 @@
       <br />
       <button type="submit" value="submit">Submit</button>
       <br />
-      <button type="button" value="register"> <a href="./register">Register</a>
-        </button>
+        </form>
+      <form method="get" action="/register">
+      <button type="submit" value="register">Register</button>
       <br />
       <label id="errMessage">{{message}}</label>
-    </section>
+      </form>
+  </section>
 
-   
 
-  </form>
+
+
 
 </body>
 

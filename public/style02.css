@@ -24,8 +24,6 @@ input{
   font-family: monospace;
   font-size: 20px;
 }
-
-
 button{
   margin: 20px;
   border-radius: 10px;
@@ -35,20 +33,11 @@ button{
   background-color: rgb(162, 4, 25);
   color: rgb(235, 241, 247);
   font-size: 20px;
-
+  cursor: pointer;
 }
 h2
 {
-   margin: 30PX 0;
+  margin: 30PX 0;
   color: cadetblue;
 }
 
-a{
-  color: rgb(235, 241, 247);;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  display: block;
-
-}

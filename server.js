@@ -90,7 +90,7 @@ app.get('/', (req, res) => {
   req.logged.reset();
   res.render('logIn');
 });
-//-----------------------------REGISTER ANCHOR-----------------------------------
+//-----------------------------GET /REGISTER -----------------------------------
 app.get('/register', (req, res) => {
  
   res.render('Reg');

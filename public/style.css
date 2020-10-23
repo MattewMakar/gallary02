@@ -43,7 +43,7 @@ button{
   background-color: rgb(162, 4, 25);
   color: rgb(235, 241, 247);
   font-size: 20px;
-
+  cursor: pointer;
 }
 
 #imagContainer{
