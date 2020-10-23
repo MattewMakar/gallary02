@@ -92,8 +92,6 @@ p{
   font-family: unset;
   transition: opacity .5s;
   font-size: 15px;
-  font-family: monospace;
-  color:  rgb(162, 4, 25);
 }
 .user:hover #username{
   opacity: 0;
