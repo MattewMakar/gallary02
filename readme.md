@@ -1,6 +1,6 @@
 # Gallery assignment01 WEB322
 
-First project in the web developement course Browser tested on
+Seond project in the web developement course Browser tested on
 
 - Firefox on Windows and mac
 - google chrome on windows and mac

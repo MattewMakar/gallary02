@@ -80,7 +80,7 @@ let m_data = {
 };
 
 //===============================================================================
-//GET method with any url will lead to the landing page
+//GET methods
 //===============================================================================
 
 //-----------------------------THE WEB APP URL-----------------------------------
@@ -108,7 +108,7 @@ app.get('/gallery', (req, res) => {
  })
 
 //===============================================================================
-//POST method handling with the sent value of the radio button 
+//POST methods
 //===============================================================================
 
 //-------------------------------REGISTER BUTTON---------------------------------
@@ -176,14 +176,17 @@ app.post('/', (req, res) => {
     let msg = "";
     d = JSON.parse(d);
     
-    if (d[req.body.userName.toLowerCase()] === req.body.password) {
-     req.logged.user = m_data.user = req.body.userName.toLowerCase();
+    if (d[req.body.userName.toLowerCase()] === req.body.password)
+    {
+      req.logged.user = m_data.user = req.body.userName.toLowerCase();
       res.render('index', { data: m_data });
     }
-    else if (!d[req.body.userName.toLowerCase()]) {
+    else if (!d[req.body.userName.toLowerCase()])
+    {
       msg = 'Not a registered username';
       res.render('logIn', { message: msg });
-    } else if (d[req.body.userName.toLowerCase()] != req.body.password) {
+    } else if (d[req.body.userName.toLowerCase()] != req.body.password)
+    {
       msg = 'Invalid password';
       res.render('logIn', { message: msg });
     }
